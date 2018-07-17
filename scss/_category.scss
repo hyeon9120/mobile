@@ -135,8 +135,14 @@
     transition: transform 0.26s ease;
 	.category-nav {
 		position:relative;
+		padding-top:0;
 	}
 	.category-wrap {
 		padding-left:15px;
+	}
+	.category-list {
+		padding:15px;
+		overflow-y:auto;
+		height:400px;
 	}
 }

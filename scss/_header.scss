@@ -113,6 +113,9 @@
 	right:0;
 	top:81px;
 }
+.search-header + .result-box {
+	padding-top:80px !important;
+}
 .text-header {
 	height:auto;
 	z-index:999; 

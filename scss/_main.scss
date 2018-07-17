@@ -150,8 +150,7 @@
 	margin-left:1px;
 	vertical-align: middle;
 }
-
-.more-view {
+.page-view {
 	margin-top:20px;
 	a {
 		text-align:center;
@@ -170,6 +169,32 @@
 			display:inline-block;
 			margin-left:4px;
 			background-image:url(../image/icon/list_view.svg);
+			background-size:11px 10px;
+			width:11px;
+			height:10px;
+			margin-bottom:-1px;
+		}
+	}
+}
+.more-view {
+	margin-top:20px;
+	a {
+		text-align:center;
+		border-radius:20px;
+		border:1px solid $gray-color;
+		color:$gray-color;
+		font-size:11px;
+		width:110px;
+		height:38px;
+		line-height:38px;
+		vertical-align: middle;
+		margin:0 auto;
+		display:block;
+		&:after {
+			content:"";
+			display:inline-block;
+			margin-left:4px;
+			background-image:url(../image/icon/list_more_view.svg);
 			background-size:11px 10px;
 			width:11px;
 			height:10px;

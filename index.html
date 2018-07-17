@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>솜씨당 - 메인화면</title>
+	<link rel="stylesheet" href="css/common.css">
+	<link rel="stylesheet" href="css/swiper.css">
+	
+	<script src="js/jquery.min.js"></script>
+	<script src="js/swiper.min.js"></script>
+</head>
+<body>
+<div class="header">
+	<h1 class="logo"><a href="">솜씨당</a></h1>
+	<div class="header-btn-right header-search-btn">
+		<a href="통합검색/카테고리.html">검색</a>
+	</div>	
+</div>
+<div class="container">
+	<div class="main-banner">
+		<div id="main-banner-container">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide">
+					<div class="banner-list"><a href=""><img src="image/banner_sample01.png" alt=""></a></div>
+				</div>
+				<div class="swiper-slide">
+					<div class="banner-list"><a href=""><img src="image/banner_sample02.png" alt=""></a></div>
+				</div>
+				<div class="swiper-slide">
+					<div class="banner-list"><a href=""><img src="image/banner_sample03.png" alt=""></a></div>
+				</div>
+				<div class="swiper-slide">
+					<div class="banner-list"><a href=""><img src="image/banner_sample04.png" alt=""></a></div>
+				</div>
+			</div>
+			<div class="swiper-pagination"></div>
+		</div>
+		
+	</div>
+	
+	<!-- 관심분야 -->
+	<div class="main-wrap">
+		<div class="main-header">
+			<h2>관심분야가 있나요?</h2>
+		</div>
+		<div class="list-interest">
+			<div id="interest-banner-container">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide">
+						<a href="">
+							<div class="img"><img src="image/roses-142876_1280.png" alt=""></div>
+							<div class="text">플라워</div>
+						</a>
+					</div>
+					<div class="swiper-slide">
+						<a href="">
+							<div class="img"><img src="image/roses-142876_1280.png" alt=""></div>
+							<div class="text">마카롱</div>
+						</a>
+					</div>
+					<div class="swiper-slide">
+						<a href="">
+							<div class="img"><img src="image/roses-142876_1280.png" alt=""></div>
+							<div class="text">캘리그라피</div>
+						</a>
+					</div>
+					<div class="swiper-slide">
+						<a href="">
+							<div class="img"><img src="image/roses-142876_1280.png" alt=""></div>
+							<div class="text">플라워</div>
+						</a>
+					</div>
+					<div class="swiper-slide">
+						<a href="">
+							<div class="img"><img src="image/roses-142876_1280.png" alt=""></div>
+							<div class="text">마카롱</div>
+						</a>
+					</div>
+					<div class="swiper-slide">
+						<a href="">
+							<div class="img"><img src="image/roses-142876_1280.png" alt=""></div>
+							<div class="text">캘리그라피</div>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- /.관심분야 -->
+	
+	<!-- 신규클래스 -->
+	<div class="main-wrap">
+		<div class="main-header">
+			<h2>신규 클래스</h2>
+			<!--<div class="list-header-btn header-loc"><a href="지역검색/search_location.html">서울시</a></div>-->
+		</div>
+		<div class="list-type-1">
+			<ul>
+				<li onclick="location.href='detail.html'">
+					<div class="list-img"><div class="img" style="background-image:url(image/list_img01.png)"></div></div>
+					<div class="list-loc">마포구 서교동</div>
+					<div class="list-type">떡</div>
+					<div class="list-subject">15가지 과일&amp;플라워 송편 만들기 원데이 클래스</div>
+					<div class="list-star">
+						<span class="star no-star"><span></span></span>
+						<span class="nostar-text">아직 남겨진 평점이 없어요</span>
+					</div>
+					<div class="list-price">
+						<span class="price01">63,000원</span>
+						<span class="price02">70,000원</span>
+						<span class="member">1인</span>
+					</div>
+					<div class="list-footer">
+						<span class="badge badge-blue">얼리버드</span>
+						<span class="badge badge-default">10%</span>
+					</div>
+				</li>
+				<li>
+					<div class="list-img"><div class="img" style="background-image:url(image/list_img02.png)"></div></div>
+					<div class="list-loc">구로디지털단지역</div>
+					<div class="list-type">드로잉</div>
+					<div class="list-subject">소확행취미로 수채화가 딱! 플라워 그리기 클래스</div>
+					<div class="list-star">
+						<span class="star no-star"><span></span></span>
+						<span class="nostar-text">아직 남겨진 평점이 없어요</span>
+					</div>
+					<div class="list-price">
+						<span class="price01">36,000원</span>
+						<span class="price02">40,000원</span>
+						<span class="member">1인</span>
+					</div>
+					<div class="list-footer">
+						<span class="badge badge-blue">얼리버드</span>
+						<span class="badge badge-default">10%</span>
+					</div>
+				</li>
+				<li>
+					<div class="list-img"><div class="img" style="background-image:url(image/list_img03.png)"></div></div>
+					<div class="list-loc">마포구 서교동</div>
+					<div class="list-type">앙금플라워</div>
+					<div class="list-subject">앙금플라워 떡케이크 - 장미,동백, 애플블러썸, 국화, 수앙금플라워 떡케이크 - 장미,동백, 애플블러썸, 국화, 수</div>
+					<div class="list-star">
+						<span class="star no-star"><span></span></span>
+						<span class="nostar-text">아직 남겨진 평점이 없어요</span>
+					</div>
+					<div class="list-price">
+						<span class="price01">75,000원</span>
+						<span class="member">1인</span>
+					</div>
+					<div class="list-footer">
+						<span class="badge badge-pink">7월 할인</span>
+						<span class="badge badge-default">10%</span>
+					</div>
+				</li>
+				<li>
+					<div class="list-img"><div class="img" style="background-image:url(image/list_img04.png)"></div></div>
+					<div class="list-loc">마포구 서교동</div>
+					<div class="list-type">앙금플라워</div>
+					<div class="list-subject">앙금플라워 떡케이크 - 장미,동백, 애플블러썸, 국화, 수</div>
+					<div class="list-star">
+						<span class="star"><span class="star-90"></span></span>
+						<span class="nostar-text">9</span>
+					</div>
+					<div class="list-price">
+						<span class="price01">75,000원</span>
+						<span class="member">1인</span>
+					</div>
+					<div class="list-footer">
+					</div>
+				</li>
+			</ul>
+		</div>
+		<div class="more-view">
+			<a href="">더 불러오기</a>
+		</div>
+	</div>
+	<!-- /.신규클래스 -->
+	
+	<!-- 인기클래스 -->
+	<div class="main-wrap">
+		<div class="main-header">
+			<h2>인기 클래스</h2>
+		</div>
+		<div class="list-type-1">
+			<ul>
+				<li>
+					<div class="list-img"><div class="img" style="background-image:url(image/list_img04.png)"></div></div>
+					<div class="list-loc">마포구 동교동</div>
+					<div class="list-type">베이킹</div>
+					<div class="list-subject">15가지 과일&amp;플라워 송편 만들기 원데이 클래스</div>
+					<div class="list-star">
+						<span class="star"><span class="star-80"></span></span>
+						<span class="nostar-text">77</span>
+					</div>
+					<div class="list-price">
+						<span class="price01">63,000원</span>
+						<span class="price02">70,000원</span>
+						<span class="member">1인</span>
+					</div>
+					<div class="list-footer">
+						<span class="badge badge-primary">오늘하루</span>
+						<span class="badge badge-default">15%</span>
+					</div>
+				</li>
+				<li>
+					<div class="list-img"><div class="img" style="background-image:url(image/list_img02.png)"></div></div>
+					<div class="list-loc">마포구 동교동</div>
+					<div class="list-type">캔들</div>
+					<div class="list-subject">소확행취미로 수채화가 딱! 플라워 그리기 클래스</div>
+					<div class="list-star">
+						<span class="star"><span class="star-70"></span></span>
+						<span class="nostar-text">332</span>
+					</div>
+					<div class="list-price">
+						<span class="price01">36,000원</span>
+						<span class="price02">40,000원</span>
+						<span class="member">1인</span>
+					</div>
+					<div class="list-footer">
+					</div>
+				</li>
+				<li>
+					<div class="list-img"><div class="img" style="background-image:url(image/list_img03.png)"></div></div>
+					<div class="list-loc">마포구 서교동</div>
+					<div class="list-type">앙금플라워</div>
+					<div class="list-subject">앙금플라워 떡케이크 - 장미,동백, 애플블러썸, 국화, 수앙금플라워 떡케이크 - 장미,동백, 애플블러썸, 국화, 수</div>
+					<div class="list-star">
+						<span class="star"><span class="star-50"></span></span>
+						<span class="nostar-text">1,396</span>
+					</div>
+					<div class="list-price">
+						<span class="price01">75,000원</span>
+						<span class="member">1인</span>
+					</div>
+					<div class="list-footer">
+					</div>
+				</li>
+				<li>
+					<div class="list-img"><div class="img" style="background-image:url(image/list_img01.png)"></div></div>
+					<div class="list-loc">마포구 서교동</div>
+					<div class="list-type">앙금플라워</div>
+					<div class="list-subject">앙금플라워 떡케이크 - 장미,동백, 애플블러썸, 국화, 수</div>
+					<div class="list-star">
+						<span class="star"><span class="star-100"></span></span>
+						<span class="nostar-text">34</span>
+					</div>
+					<div class="list-price">
+						<span class="price01">75,000원</span>
+						<span class="member">1인</span>
+					</div>
+					<div class="list-footer">
+					</div>
+				</li>
+			</ul>
+		</div>
+		<div class="more-view">
+			<a href="">더 불러오기</a>
+		</div>
+	</div>
+	<!-- /.인기클래스 -->
+	
+	<hr class="main">
+	
+	<!-- 동네클래스 -->
+	<div class="main-wrap">
+		<div class="main-header">
+			<h2>동네 클래스</h2>
+			<div class="h2-subtext">
+				<a href="javascript:appinstall_show('동네클래스의 관심지역 및 분야 설정은 모바일 앱에서 가능합니다.');">
+					<span class="underline">마포구 동교동</span>에서<br>
+					<span class="underline">모든분야</span>의 클래스
+				</a>
+			</div>
+			<div class="list-header-btn header-filter"><a href="상세조건/상세조건.html">상세조건</a></div>
+		</div>
+		<div class="list-type-2">
+			<ul>
+				<li>
+					<div class="list-img-wrap">
+						<div class="list-img"><div class="img" style="background-image:url(image/list_img04.png)"></div></div>
+						<div class="list-loc">마포구 동교동</div>
+					</div>
+					<div class="list-type">베이킹</div>
+					<div class="list-subject">15가지 과일&amp;플라워 송편 만들기 원데이 클래스</div>
+					<div class="list-star">
+						<span class="star"><span class="star-80"></span></span>
+						<span class="nostar-text">77</span>
+					</div>
+					<div class="list-price">
+						<span class="price01">63,000원</span>
+						<span class="price02">70,000원</span>
+						<span class="member">1인</span>
+					</div>
+					<div class="list-footer">
+						<span class="badge badge-primary">오늘하루</span>
+						<span class="badge badge-default">15%</span>
+					</div>
+				</li>
+				<li>
+					<div class="list-img-wrap">
+						<div class="list-img"><div class="img" style="background-image:url(image/list_img01.png)"></div></div>
+						<div class="list-loc">마포구 동교동</div>
+					</div>
+					<div class="list-type">캔들</div>
+					<div class="list-subject">소확행취미로 수채화가 딱! 플라워 그리기 클래스</div>
+					<div class="list-star">
+						<span class="star"><span class="star-70"></span></span>
+						<span class="nostar-text">332</span>
+					</div>
+					<div class="list-price">
+						<span class="price01">36,000원</span>
+						<span class="price02">40,000원</span>
+						<span class="member">1인</span>
+					</div>
+					<div class="list-footer">
+					</div>
+				</li>
+				<li>
+					<div class="list-img-wrap">
+						<div class="list-img" style=""></div>
+						<div class="list-loc">마포구 서교동</div>
+					</div>
+					<div class="list-type">앙금플라워</div>
+					<div class="list-subject">앙금플라워 떡케이크 - 장미,동백, 애플블러썸, 국화, 수앙금플라워 떡케이크 - 장미,동백, 애플블러썸, 국화, 수</div>
+					<div class="list-star">
+						<span class="star"><span class="star-50"></span></span>
+						<span class="nostar-text">1,396</span>
+					</div>
+					<div class="list-price">
+						<span class="price01">75,000원</span>
+						<span class="member">1인</span>
+					</div>
+					<div class="list-footer">
+					</div>
+				</li>
+				<li>
+					<div class="list-img-wrap">
+						<div class="list-img" style=""></div>
+						<div class="list-loc">마포구 서교동</div>
+					</div>
+					<div class="list-type">앙금플라워</div>
+					<div class="list-subject">앙금플라워 떡케이크 - 장미,동백, 애플블러썸, 국화, 수</div>
+					<div class="list-star">
+						<span class="star"><span class="star-100"></span></span>
+						<span class="nostar-text">34</span>
+					</div>
+					<div class="list-price">
+						<span class="price01">75,000원</span>
+						<span class="member">1인</span>
+					</div>
+					<div class="list-footer">
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<!-- /.동네클래스 -->
+	
+	<hr class="main">
+	
+	<!-- 동네 공방 -->
+	<div class="main-wrap">
+		<div class="main-header">
+			<h2>동네 공방</h2>
+		</div>
+		<div class="list-craft">
+		<ul>
+			<li>
+				<a href="공방/공방.html">
+					<div class="photo" style="background-image:url(image/list_img01.png)"></div>
+					<div class="wrap">
+						<div class="tit">아망디네 베이킹</div>
+						<!--<div class="sub">연남동에 위치한 작은 베이킹 공방입니다.</div>-->
+						<div class="hash text-yellow">
+							<span>#베이킹</span>
+							<span>#마카롱</span>
+							<span>#커피</span>
+							외 1개
+						</div>
+						<div class="info">
+							<span>마포구 연남동</span>
+							<span>모집중 클래스 7개</span>
+							<span>마감 클래스 2개</span>
+						</div>
+					</div>
+				</a>
+			</li>
+			<li>
+				<a href="공방/공방.html">
+					<div class="photo" style="background-image:url(image/list_img02.png)"></div>
+					<div class="wrap">
+						<div class="tit">루벤마카롱</div>
+						<!--<div class="sub">연남동에 위치한 작은 베이킹 공방입니다.</div>-->
+						<div class="hash text-yellow">
+							<span>#베이킹</span>
+							<span>#마카롱</span>
+							<span>#커피</span>
+							외 1개
+						</div>
+						<div class="info">
+							<span>마포구 연남동</span>
+							<span>모집중 클래스 7개</span>
+							<span>마감 클래스 2개</span>
+						</div>
+					</div>
+				</a>
+			</li>
+			<li>
+				<a href="공방/공방.html">
+					<div class="photo" style="background-image:url(../image/list_img03.png)"></div>
+					<div class="wrap">
+						<div class="tit">루벤마카롱</div>
+						<!--<div class="sub">연남동에 위치한 작은 베이킹 공방입니다.</div>-->
+						<div class="hash text-yellow">
+							<span>#베이킹</span>
+							<span>#마카롱</span>
+							<span>#커피</span>
+							외 1개
+						</div>
+						<div class="info">
+							<span>마포구 연남동</span>
+						</div>
+					</div>
+				</a>
+			</li>
+			<li>
+				<a href="공방/공방.html">
+					<div class="photo"></div>
+					<div class="wrap">
+						<div class="tit">공방타이틀</div>
+						<div class="hash text-yellow">
+							<span>#베이킹</span>
+							<span>#마카롱</span>
+							<span>#커피</span>
+							외 1개
+						</div>
+						<div class="sub">연남동에 위치한 작은 베이킹 공방입니다.</div>	
+						<div class="info">
+							<span>지역</span>
+							<span>모집중 클래스 N개</span>
+							<span>마감 클래스 N개</span>
+						</div>
+					</div>
+				</a>
+			</li>
+		</ul>
+	</div>
+	</div>
+	<!-- /.동네 공방-->
+</div>
+<div class="menu-bar show">
+	<ul>
+		<li class="home active"><a href="javascript:;">홈</a></li>
+		<li class="launge"><a href="함께해요/함께해요.html">함께해요</a></li>
+		<li class="noti"><a href="javascript:appinstall_show('채팅은 모바일 앱에서 가능합니다.');">알림</a></li>
+		<li class="mypage"><a href="javascript:appinstall_show('마이페이지는 모바일 앱에서만 확인하실 수 있습니다.');">마이페이지</a></li>
+	</ul>
+</div>
+<div class="bg-overlay"></div>
+<div class="mobile-app-install bg-w">
+	<div class="box">
+		<div class="txt01" id="app_txt"></div>
+		<div class="txt02">지금 앱을 설치해보시겠어요?</div>
+		<div class="yellow-box">
+			APP 첫 클래스 등록시 10% 할인 이벤트 진행중
+		</div>
+	</div>
+	<div class="txt-footer2">
+		<div class="left">
+			<a href="javascript:appinstall_hide()">아뇨, 다음에 할래요.</a>
+		</div>
+		<div class="right">
+			<a href="javascript:;" class="text-primary bold">설치하기</a>
+		</div>
+	</div>
+</div>
+<script>
+var main_swiper01 = new Swiper('#main-banner-container', {
+	slidesPerView: 'auto',
+	spaceBetween: 0,
+	pagination: {
+		el: '.swiper-pagination',
+		clickable: true,
+	  },
+});
+var main_swiper02 = new Swiper('#interest-banner-container', {
+  slidesPerView: 'auto',
+  spaceBetween: 0,
+});	
+</script>
+<script src="js/common.js"></script>
+</body>
+</html>

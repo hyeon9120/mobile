@@ -1,0 +1,120 @@
+* {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);  
+} 
+.menu-bar {
+	position:fixed;	
+	z-index:999;
+	bottom:0;
+	left:0;
+	right:0;
+	height:50px;
+	background:#fff;
+	border-top:1px solid #ebebeb;
+	transition:.3s ease-in-out;
+	&.show {
+		bottom:0;
+	}
+	&.hide {
+		bottom:-60px;
+	}
+	ul {
+		width:100%;
+		height:50px;
+	}
+	li {
+		width:25%;
+		float:left;
+		a {
+			@extend %ir-pm;
+			margin:0 auto;
+			background-position:center center;
+			background-repeat:no-repeat;
+			width:50px;
+			height:50px;
+		}
+	}
+	.home a {
+		background-image:url(../image/icon/main_menu_home_off.svg);
+	}
+	.launge a {
+		background-image:url(../image/icon/main_menu_launge_off.svg);
+	}
+	.noti a {
+		background-image:url(../image/icon/main_menu_noti_off.svg);
+	}
+	.mypage a {
+		background-image:url(../image/icon/main_menu_mypage_off.svg);
+	}
+	.home.active a,
+	.home a:active {
+		background-image:url(../image/icon/main_menu_home_on.svg);
+	}
+	.launge.active a,
+	.launge a:active{
+		background-image:url(../image/icon/main_menu_launge_on.svg);
+	}
+	.noti.active a,
+	.noti a:active {
+		background-image:url(../image/icon/main_menu_noti_on.svg);
+	}
+	.mypage.active a,
+	.mypage a:active {
+		background-image:url(../image/icon/main_menu_mypage_on.svg);
+	}
+}
+.price-bar {
+	position:fixed;	
+	z-index:100;
+	bottom:0;
+	left:0;
+	right:0;
+	height:80px;
+	background:#fff;
+	border-top:1px solid #ebebeb;
+	padding:15px;
+	transition:.3s ease-in-out;
+	.detail_txt {
+		width:50%;
+		float:left;
+	}
+	.detail_btn {
+		width:50%;
+		float:right;
+		a {
+			display:block;
+			background-color:$primary-color;
+			color:#fff;
+			text-align:center;
+			line-height:50px;
+			border-radius:5px;
+		}
+	}
+	.list-star {
+		margin-top:0px;
+	}
+	.list-price {
+		margin-top:4px;
+		.price01 {
+			font-size:12px;
+			display:inline-block;
+		}
+		.price02 {
+			display:inline-block;
+			margin-left:4px;
+			font-size:10px;
+			color:#b2bcc8;
+			text-decoration: line-through;
+		}
+		.member {
+			font-size:12px;
+			margin-left:4px;
+			display:inline-block;			
+			&:before {
+				content:"/ ";
+			}
+		}
+	}
+	&.hide {
+		bottom:-80px !important;
+	}
+}

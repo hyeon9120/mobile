@@ -1,0 +1,142 @@
+.category-box {
+	position:absolute;
+	top:0;
+	left:0;
+	right:0;
+	padding-top:80px;
+	height:100%;	
+}
+.category-nav {
+	left:0;
+	top:0;
+	bottom:0;
+	position:fixed;
+	z-index:2;
+	padding-top:81px;
+	width:75px;	
+	background-color:#fff;	
+	&:after {
+		position:absolute;
+		left:74px;
+		top:0;
+		bottom:0;
+		width:1px;
+		background-color:#e9ecf0;
+		content:"";
+	}
+	ul {
+		position:relative;
+		background-color:#fff;
+		&:after {
+			position:absolute;
+			right:0;
+			top:0;
+			bottom:0;
+			width:1px;
+			background-color:#e9ecf0;
+			content:"";
+		}
+		li {
+			a {
+				width:75px;
+				height:75px;
+				display:block;
+				text-align:center;
+				background-position:center 20px;
+				padding-top:44px;
+				background-size:20px 20px;
+				background-repeat:no-repeat;
+				font-size:13px;
+			}
+			&.all a {
+				background-image:url(../image/icon/cate_all_off.svg);
+			}
+			&.cook a {
+				background-image:url(../image/icon/cate_cook_off.svg);
+			}
+			&.craft a {
+				background-image:url(../image/icon/cate_craft_off.svg);
+			}
+			&.art a {
+				background-image:url(../image/icon/cate_art_off.svg);
+			}
+			&.flower a {
+				background-image:url(../image/icon/cate_flower_off.svg);
+			}
+			&.active {
+				a {
+					background-color:rgba(255, 82, 82, 0.05);
+					color:#ff5252;
+				}
+				&.all a {
+				background-image:url(../image/icon/cate_all_on.svg);
+				}
+				&.cook a {
+					background-image:url(../image/icon/cate_cook_on.svg);
+				}
+				&.craft a {
+					background-image:url(../image/icon/cate_craft_on.svg);
+				}
+				&.art a {
+					background-image:url(../image/icon/cate_art_on.svg);
+				}
+				&.flower a {
+					background-image:url(../image/icon/cate_flower_on.svg);
+				}
+			}
+		}
+	}
+}
+.category-list {
+	position:relative;
+	padding:95px 20px 20px 95px;
+	flex-grow:1;
+	flex-shrink:1;
+	flex-basis:0;
+	&:before {
+		position:absolute;
+		left:-1px;
+		top:80px;
+		bottom:0;
+		width:1px;
+		background-color:#e9ecf0;
+		content:"";
+	}
+	ul {
+		&:before {
+			position:absolute;
+			left:-1px;
+			top:80px;
+			bottom:0;
+			width:1px;
+			background-color:#e9ecf0;
+			content:"";
+		}
+		li {
+			a {
+				display:block;
+				padding:10px;
+			}
+		}
+	}
+}
+.category-moreview {
+	z-index:998;
+	position:fixed;
+	top:91px;
+	left:0;
+	right:0;
+	background:#f9f9f9;
+	display:flex;
+	border-bottom:1px solid #e9ecf0;
+	overflow:hidden;
+	transform: scaleY(0);    
+    transform-origin: top;
+    transition: transform 0.26s ease;
+	.category-nav {
+		position:relative;
+	}
+	.category-wrap {
+		padding-left:15px;
+	}
+}

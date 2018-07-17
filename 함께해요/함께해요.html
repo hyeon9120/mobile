@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>솜씨당 - 함께해요</title>
+	<link rel="stylesheet" href="../css/common.css">
+	<link rel="stylesheet" href="../css/swiper.css">
+	
+	<script src="../js/jquery.min.js"></script>
+	<script src="../js/swiper.min.js"></script>
+</head>
+<body>
+<div class="header withyou-header">
+	<h1>함께해요</h1>
+	<div class="header-btn-right header-search-btn">
+		<a href="">검색</a>
+	</div>	
+</div>
+<div class="withyou-header-tab">
+	<div class="withyou-search bg-w">
+		<input type="text" value="서울시 전체" onclick="location.href='../지역검색/지역검색.html'">
+	</div>
+	<div class="tab" id="withyou_tab">
+		<ul class="tab-wrapper">
+			<li class='active swiper-slide'><a href="javascript:;" rel="class_info">전체</a></li>
+			<li class="swiper-slide"><a href="javascript:;" rel="class_review">인기</a></li>
+			<li class="swiper-slide"><a href="javascript:;" rel="class_qna">신규</a></li>
+			<li class="swiper-slide"><a href="javascript:;" rel="class_cancel">작가 매칭중</a></li>
+			<li class="swiper-slide"><a href="javascript:;" rel="class_qna">작가 매칭완료</a></li>
+			<li class="swiper-slide"><a href="javascript:;" rel="class_qna">작가 1</a></li>
+			<li class="swiper-slide"><a href="javascript:;" rel="class_qna">작가 2</a></li>
+			<li class="swiper-slide"><a href="javascript:;" rel="class_qna">작가 3</a></li>
+		</ul>
+	</div>
+</div>
+<div class="withyou-list">
+	<ul>
+		<li class="type-blue"> 
+			<a href="함께해요_상세.html">
+				<div class="withyou-list-header">
+					<div class="list-photo" style="background-image:url(../image/icon/avatar_dorothy_40.svg);"></div>
+					<div class="header-info">
+						<div class="name">재나재은맘</div>
+						<div class="time">방금 전</div>
+					</div>
+					<div class="withyou-badge">신규모집</div>
+				</div>
+				<div class="withyou-list-box">
+					<!--<div class="withyou-hash">
+						<span>#홍대</span>
+						<span>#향수공바</span>
+						<span>#커스텀향수</span>
+					</div>-->
+					<div class="withyou-title">
+						홍대에서 커스텀 향수 같이 만드실 분 구해요.
+					</div>
+					<div class="withyou-info">
+						<dl>
+							<dt>희망장소</dt>
+							<dd>홍대입구역 인근</dd>
+						</dl>
+						<dl>
+							<dt>참가비</dt>
+							<dd>50,000 - 60,000원 / 1인</dd>
+						</dl>
+					</div>
+				</div>
+				<div class="withyou-list-footer">
+					<div class="withyou-leftday">
+						<div class="left-d">7일 남음</div>
+						<div class="left-s">모집중</div>
+					</div>
+					<div class="withyou-people">
+						<div class="people">
+							<span>모집인원 5명</span>
+							<span class="r">2명 신청중</span>
+						</div>
+						<div class="percent">
+							<div class="now" style="width:40%"></div>
+							<div class="txt" style="left:40%">40%</div>
+						</div>
+					</div>
+				</div>
+			</a>
+		</li>
+		<li class="type-green"> 
+			<a href="함께해요_상세_작가매칭중.html">
+				<div class="withyou-list-header">
+					<div class="list-photo" style="background-image:url(../image/icon/avatar_micky_40.svg);"></div>
+					<div class="header-info">
+						<div class="name">재나재은맘</div>
+						<div class="time">방금 전</div>
+					</div>
+					<div class="withyou-badge">작가매칭중</div>
+				</div>
+				<div class="withyou-list-box">
+					<!--<div class="withyou-hash">
+						<span>#파주</span>
+						<span>#토퍼</span>
+						<span>#공예</span>
+					</div>-->
+					<div class="withyou-title">
+						홍대에서 커스텀 향수 같이 만드실 분 구해요.
+					</div>
+					<div class="withyou-info">
+						<dl>
+							<dt>희망장소</dt>
+							<dd>홍대입구역 인근</dd>
+						</dl>
+						<dl>
+							<dt>참가비</dt>
+							<dd>50,000 - 60,000원 / 1인</dd>
+						</dl>
+					</div>
+				</div>
+				<div class="withyou-list-footer">
+					<div class="withyou-leftday">
+						<div class="left-d">7일 남음</div>
+						<div class="left-s">모집중</div>
+					</div>
+					<div class="withyou-people">
+						<div class="people">
+							<span>모집인원 5명</span>
+							<span class="r">2명 신청중</span>
+						</div>
+						<div class="percent">
+							<div class="now" style="width:40%"></div>
+							<div class="txt" style="left:40%">40%</div>
+						</div>
+					</div>
+				</div>
+			</a>
+		</li>
+		<li class="type-complete">
+			<a href="함께해요_상세_작가매칭완료.html">
+				<div class="withyou-list-header">
+					<div class="list-photo" style="background-image:url(../image/icon/avatar_micky_40.svg);"></div>
+					<div class="header-info">
+						<div class="name">재나재은맘</div>
+						<div class="time">방금 전</div>
+					</div>
+					<div class="withyou-badge">작가 매칭 완료</div>
+				</div>
+				<div class="withyou-list-box">
+					<!--<div class="withyou-hash">
+						<span>#파주</span>
+						<span>#토퍼</span>
+						<span>#공예</span>
+					</div>-->
+					<div class="withyou-title">
+						홍대에서 커스텀 향수 같이 만드실 분 구해요.
+					</div>
+					<div class="withyou-info">
+						<dl>
+							<dt>희망장소</dt>
+							<dd>홍대입구역 인근</dd>
+						</dl>
+						<dl>
+							<dt>참가비</dt>
+							<dd>50,000 - 60,000원 / 1인</dd>
+						</dl>
+					</div>
+				</div>
+				<div class="withyou-list-footer">
+					<div class="withyou-leftday">
+						<div class="left-d">7일 남음</div>
+						<div class="left-s">모집중</div>
+					</div>
+					<div class="withyou-people">
+						<div class="people">
+							<span>모집인원 5명</span>
+							<span class="r">2명 신청중</span>
+						</div>
+						<div class="percent">
+							<div class="now" style="width:40%"></div>
+							<div class="txt" style="left:40%">40%</div>
+						</div>
+					</div>
+				</div>
+			</a>
+		</li>
+		<li class="type-orange"> 
+			<a href="함께해요_상세.html">
+				<div class="withyou-list-header">
+					<div class="list-photo" style="background-image:url(../image/icon/avatar_micky_40.svg);"></div>
+					<div class="header-info">
+						<div class="name">재나재은맘</div>
+						<div class="time">방금 전</div>
+					</div>
+					<div class="withyou-badge">신규모집</div>
+				</div>
+				<div class="withyou-list-box">
+					<!--<div class="withyou-hash">
+						<span>#파주</span>
+						<span>#토퍼</span>
+						<span>#공예</span>
+					</div>-->
+					<div class="withyou-title">
+						홍대에서 커스텀 향수 같이 만드실 분 구해요.
+					</div>
+					<div class="withyou-info">
+						<dl>
+							<dt>희망장소</dt>
+							<dd>홍대입구역 인근</dd>
+						</dl>
+						<dl>
+							<dt>참가비</dt>
+							<dd>50,000 - 60,000원 / 1인</dd>
+						</dl>
+					</div>
+				</div>
+				<div class="withyou-list-footer">
+					<div class="withyou-leftday">
+						<div class="left-d">7일 남음</div>
+						<div class="left-s">모집중</div>
+					</div>
+					<div class="withyou-people">
+						<div class="people">
+							<span>모집인원 5명</span>
+							<span class="r">2명 신청중</span>
+						</div>
+						<div class="percent">
+							<div class="now" style="width:40%"></div>
+							<div class="txt" style="left:40%">40%</div>
+						</div>
+					</div>
+				</div>
+			</a>
+		</li>
+		<li class="type-primary"> 
+			<a href="함께해요_상세.html">
+				<div class="withyou-list-header">
+					<div class="list-photo" style="background-image:url(../image/icon/avatar_micky_40.svg);"></div>
+					<div class="header-info">
+						<div class="name">재나재은맘</div>
+						<div class="time">방금 전</div>
+					</div>
+					<div class="withyou-badge">신규모집</div>
+				</div>
+				<div class="withyou-list-box">
+					<!--<div class="withyou-hash">
+						<span>#파주</span>
+						<span>#토퍼</span>
+						<span>#공예</span>
+					</div>-->
+					<div class="withyou-title">
+						홍대에서 커스텀 향수 같이 만드실 분 구해요.
+					</div>
+					<div class="withyou-info">
+						<dl>
+							<dt>희망장소</dt>
+							<dd>홍대입구역 인근</dd>
+						</dl>
+						<dl>
+							<dt>참가비</dt>
+							<dd>50,000 - 60,000원 / 1인</dd>
+						</dl>
+					</div>
+				</div>
+				<div class="withyou-list-footer">
+					<div class="withyou-leftday">
+						<div class="left-d">7일 남음</div>
+						<div class="left-s">모집중</div>
+					</div>
+					<div class="withyou-people">
+						<div class="people">
+							<span>모집인원 5명</span>
+							<span class="r">2명 신청중</span>
+						</div>
+						<div class="percent">
+							<div class="now" style="width:40%"></div>
+							<div class="txt" style="left:40%">40%</div>
+						</div>
+					</div>
+				</div>
+			</a>
+		</li>
+	</ul>
+</div>
+<div class="bg-overlay"></div>
+<div class="mobile-app-install bg-w">
+	<div class="box">
+		<div class="txt01" id="app_txt"></div>
+		<div class="txt02">지금 앱을 설치해보시겠어요?</div>
+		<div class="yellow-box">
+			APP 첫 클래스 등록시 10% 할인 이벤트 진행중
+		</div>
+	</div>
+	<div class="txt-footer2">
+		<div class="left">
+			<a href="javascript:appinstall_hide()">아뇨, 다음에 할래요.</a>
+		</div>
+		<div class="right">
+			<a href="javascript:;" class="text-primary bold">설치하기</a>
+		</div>
+	</div>
+</div>
+<div class="menu-bar show">
+	<ul>
+		<li class="home"><a href="../index.html">홈</a></li>
+		<li class="launge active"><a href="../함께해요/함께해요.html">함께해요</a></li>
+		<li class="noti"><a href="javascript:appinstall_show('채팅은 모바일 앱에서 가능합니다.');">알림</a></li>
+		<li class="mypage"><a href="javascript:appinstall_show('마이페이지는 모바일 앱에서만 확인하실 수 있습니다.');">마이페이지</a></li>
+	</ul>
+</div>
+<script>
+// 상단탭 Swiper
+var tabswiper = new Swiper('#withyou_tab', {
+    slidesPerView: 'auto',
+    spaceBetween: 0,
+	wrapperClass: 'tab-wrapper'
+});
+	
+// 함게해요 tab 컨텐츠 이동
+var with_tab = $('.withyou-header-tab');
+var tab_scl = with_tab.offset().top-10;
+function withyou_tab_position() {
+	var scl = $(window).scrollTop();
+	if(scl > tab_scl ) {
+		with_tab.addClass('fixed');
+	} else {
+		with_tab.removeClass('fixed');
+	}
+}
+withyou_tab_position();
+$(window).scroll(function(){
+	withyou_tab_position();
+})
+</script>
+<script src="../js/common.js"></script>
+</body>
+</html>

@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>솜씨당 - 통합검색</title>
+	<link rel="stylesheet" href="../css/common.css">
+	<link rel="stylesheet" href="../css/swiper.css">
+	
+	<script src="../js/jquery.min.js"></script>
+	<script src="../js/swiper.min.js"></script>
+</head>
+<body class="body-search">
+<form>
+	<div class="header search-header">
+		<div class="search-form">
+			<input type="text" placeholder="클래스, 공방, 사용자, 키워드">
+		</div>
+		<div class="header-btn-right btn-cancel">
+			<a href="통합검색.html">취소</a>
+		</div>
+	</div>
+	<div class="tab">
+		<ul>
+			<li class="active"><a href="javascript:;" rel="result_class">클래스</a></li>
+			<li><a href="javascript:;" rel="result_worker">작가</a></li>
+			<li><a href="javascript:;" rel="result_work">공방</a></li>
+			<li><a href="javascript:;" rel="result_withyou">함께해요</a></li>
+			<li><a href="통합검색_결과없음.html" rel="result_withyou">결과없음</a></li>
+		</ul>
+	</div>
+	
+	<div class="result_box">
+		<!-- 클래스 결과 -->
+		<div id="result_class" class="tab_content">
+			<div class="list-header">
+				<h3>13건의 검색결과</h3>
+				<div class="list-header-btn header-filter"><a href="">상세조건</a></div>
+			</div>
+			<div class="list-type-1">
+				<ul>
+					<li>
+						<div class="list-img"><div class="img" style="background-image:url(image/list_img04.png)"></div></div>
+						<div class="list-loc">마포구 동교동</div>
+						<div class="list-type">베이킹</div>
+						<div class="list-subject">15가지 과일&amp;플라워 송편 만들기 원데이 클래스</div>
+						<div class="list-star">
+							<span class="star"><span class="star-80"></span></span>
+							<span class="nostar-text">77</span>
+						</div>
+						<div class="list-price">
+							<span class="price01">63,000원</span>
+							<span class="price02">70,000원</span>
+							<span class="member">1인</span>
+						</div>
+						<div class="list-footer">
+							<span class="badge badge-primary">오늘하루</span>
+							<span class="badge badge-default">15%</span>
+						</div>
+					</li>
+					<li>
+						<div class="list-img"><div class="img" style="background-image:url(image/list_img02.png)"></div></div>
+						<div class="list-loc">마포구 동교동</div>
+						<div class="list-type">캔들</div>
+						<div class="list-subject">소확행취미로 수채화가 딱! 플라워 그리기 클래스</div>
+						<div class="list-star">
+							<span class="star"><span class="star-70"></span></span>
+							<span class="nostar-text">332</span>
+						</div>
+						<div class="list-price">
+							<span class="price01">36,000원</span>
+							<span class="price02">40,000원</span>
+							<span class="member">1인</span>
+						</div>
+						<div class="list-footer">
+							<span class="badge badge-violet">오늘하루</span>
+							<span class="badge badge-default">15%</span>
+						</div>
+					</li>
+					<li>
+						<div class="list-img"><div class="img" style="background-image:url(image/list_img03.png)"></div></div>
+						<div class="list-loc">마포구 서교동</div>
+						<div class="list-type">앙금플라워</div>
+						<div class="list-subject">앙금플라워 떡케이크 - 장미,동백, 애플블러썸, 국화, 수앙금플라워 떡케이크 - 장미,동백, 애플블러썸, 국화, 수</div>
+						<div class="list-star">
+							<span class="star"><span class="star-50"></span></span>
+							<span class="nostar-text">1,396</span>
+						</div>
+						<div class="list-price">
+							<span class="price01">75,000원</span>
+							<span class="member">1인</span>
+						</div>
+						<div class="list-footer">
+							<span class="badge badge-blue">얼리버드</span>
+							<span class="badge badge-default">1000원 할인</span>
+						</div>
+					</li>
+					<li>
+						<div class="list-img"><div class="img" style="background-image:url(image/list_img01.png)"></div></div>
+						<div class="list-loc">마포구 서교동</div>
+						<div class="list-type">앙금플라워</div>
+						<div class="list-subject">앙금플라워 떡케이크 - 장미,동백, 애플블러썸, 국화, 수</div>
+						<div class="list-star">
+							<span class="star"><span class="star-100"></span></span>
+							<span class="nostar-text">34</span>
+						</div>
+						<div class="list-price">
+							<span class="price01">75,000원</span>
+							<span class="member">1인</span>
+						</div>
+						<div class="list-footer">
+							<span class="badge badge-pink">7월할인</span>
+							<span class="badge badge-default">1000원 할인</span>
+						</div>
+					</li>
+					<li>
+						<div class="list-img"><div class="img" style="background-image:url(image/list_img03.png)"></div></div>
+						<div class="list-loc">마포구 서교동</div>
+						<div class="list-type">앙금플라워</div>
+						<div class="list-subject">앙금플라워 떡케이크 - 장미,동백, 애플블러썸, 국화, 수앙금플라워 떡케이크 - 장미,동백, 애플블러썸, 국화, 수</div>
+						<div class="list-star">
+							<span class="star"><span class="star-50"></span></span>
+							<span class="nostar-text">1,396</span>
+						</div>
+						<div class="list-price">
+							<span class="price01">75,000원</span>
+							<span class="member">1인</span>
+						</div>
+						<div class="list-footer">
+							<span class="badge badge-green">얼리버드</span>
+							<span class="badge badge-default">1000원 할인</span>
+						</div>
+					</li>
+					<li>
+						<div class="list-img"><div class="img" style="background-image:url(image/list_img01.png)"></div></div>
+						<div class="list-loc">마포구 서교동</div>
+						<div class="list-type">앙금플라워</div>
+						<div class="list-subject">앙금플라워 떡케이크 - 장미,동백, 애플블러썸, 국화, 수</div>
+						<div class="list-star">
+							<span class="star no-star"><span></span></span>
+							<span class="nostar-text">아직 남겨진 평점이 없어요</span>
+						</div>
+						<div class="list-price">
+							<span class="price01">75,000원</span>
+							<span class="member">1인</span>
+						</div>
+						<div class="list-footer">
+							<span class="badge badge-yellow">7월할인</span>
+							<span class="badge badge-default">1000원 할인</span>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!-- /.클래스 결과 -->
+		
+		<!-- 작가 결과 -->
+		<div id="result_worker" class="tab_content" style="display:none">
+			<div class="list-header">
+				<h3>19건의 검색결과</h3>
+			</div>
+			<div class="list-craft">
+				<ul>
+					<li>
+						<a href="javascript:;">
+							<div class="photo" style="background-image:url(../image/list_img01.png)"></div>
+							<div class="wrap">
+								<div class="tit">루벤마카롱</div>
+								<div class="sub">홍대로 옮겨 새로 자리잡은 마카롱 클래스 입니다 :)</div>						
+								<div class="info">
+									<span>홍대</span>
+									<span>클래스 7개</span>
+									<span class="follow">팔로우함</span>
+								</div>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="javascript:;">
+							<div class="photo" style="background-image:url(../image/list_img02.png)"></div>
+							<div class="wrap">
+								<div class="tit">루벤마카롱</div>
+								<div class="sub">홍대로 옮겨 새로 자리잡은 마카롱 클래스 입니다 :)</div>						
+								<div class="info">
+									<span>홍대</span>
+									<span>클래스 7개</span>
+									<span class="follow">팔로우함</span>
+								</div>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="javascript:;">
+							<div class="photo" style="background-image:url(../image/list_img03.png)"></div>
+							<div class="wrap">
+								<div class="tit">루벤마카롱</div>
+								<div class="sub">Text입력입니다Text입력입니다Text입력입니다Text입력입니다Text입력입니다Text입력입니다Text입력입니다</div>						
+								<div class="info">
+									<span>홍대</span>
+									<span>클래스 7개</span>
+									<span class="follow">팔로우함</span>
+								</div>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="javascript:;">
+							<div class="photo" style="background-image:url(../image/list_img04.png)"></div>
+							<div class="wrap">
+								<div class="tit">작가이름</div>
+								<div class="sub">작가 소개를 적어주세요. 노출은 최대 1줄 가능해요.</div>						
+								<div class="info">
+									<span>지역</span>
+									<span>클래스 N개</span>
+									<span class="follow">팔로우함</span>
+								</div>
+							</div>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!-- /.작가 결과 -->
+		
+		<!-- 공방 결과 -->
+		<div id="result_work" class="tab_content" style="display:none">
+			<div class="list-header">
+				<h3>19건의 검색결과</h3>
+			</div>
+			<div class="list-craft">
+				<ul>
+					<li>
+						<a href="../공방/공방.html">
+							<div class="photo" style="background-image:url(image/../list_img01.png)"></div>
+							<div class="wrap">
+								<div class="tit">아망디네 베이킹</div>
+								<!--<div class="sub">연남동에 위치한 작은 베이킹 공방입니다.</div>-->
+								<div class="hash text-yellow">
+									<span>#베이킹</span>
+									<span>#마카롱</span>
+									<span>#커피</span>
+									외 1개
+								</div>
+								<div class="info">
+									<span>마포구 연남동</span>
+									<span>모집중 클래스 7개</span>
+									<span>마감 클래스 2개</span>
+								</div>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="../공방/공방.html">
+							<div class="photo" style="background-image:url(image/../list_img02.png)"></div>
+							<div class="wrap">
+								<div class="tit">루벤마카롱</div>
+								<!--<div class="sub">연남동에 위치한 작은 베이킹 공방입니다.</div>-->
+								<div class="hash text-yellow">
+									<span>#베이킹</span>
+									<span>#마카롱</span>
+									<span>#커피</span>
+									외 1개
+								</div>
+								<div class="info">
+									<span>마포구 연남동</span>
+									<span>모집중 클래스 7개</span>
+									<span>마감 클래스 2개</span>
+								</div>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="../공방/공방.html">
+							<div class="photo" style="background-image:url(../image/list_img03.png)"></div>
+							<div class="wrap">
+								<div class="tit">루벤마카롱</div>
+								<!--<div class="sub">연남동에 위치한 작은 베이킹 공방입니다.</div>-->
+								<div class="hash text-yellow">
+									<span>#베이킹</span>
+									<span>#마카롱</span>
+									<span>#커피</span>
+									외 1개
+								</div>
+								<div class="info">
+									<span>마포구 연남동</span>
+								</div>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="../공방/공방.html">
+							<div class="photo"></div>
+							<div class="wrap">
+								<div class="tit">공방타이틀</div>
+								<div class="hash text-yellow">
+									<span>#베이킹</span>
+									<span>#마카롱</span>
+									<span>#커피</span>
+									외 1개
+								</div>
+								<div class="sub">연남동에 위치한 작은 베이킹 공방입니다.</div>	
+								<div class="info">
+									<span>지역</span>
+									<span>모집중 클래스 N개</span>
+									<span>마감 클래스 N개</span>
+								</div>
+							</div>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		
+		<!-- 함께해요 결과 -->
+		<div id="result_withyou" class="tab_content" style="display:none">
+			<div class="list-header">
+				<h3>19건의 검색결과</h3>
+			</div>
+			<div class="withyou-list">
+				<ul>
+					<li class="type-blue"> 
+						<a href="../함께해요/함께해요_상세.html">
+							<div class="withyou-list-header">
+								<div class="list-photo" style="background-image:url(../image/icon/avatar_dorothy_40.svg);"></div>
+								<div class="header-info">
+									<div class="name">재나재은맘</div>
+									<div class="time">방금 전</div>
+								</div>
+								<div class="withyou-badge">신규모집</div>
+							</div>
+							<div class="withyou-list-box">
+								<div class="withyou-title">
+									홍대에서 커스텀 향수 같이 만드실 분 구해요.
+								</div>
+								<div class="withyou-info">
+									<dl>
+										<dt>희망장소</dt>
+										<dd>홍대입구역 인근</dd>
+									</dl>
+									<dl>
+										<dt>참가비</dt>
+										<dd>50,000 - 60,000원 / 1인</dd>
+									</dl>
+								</div>
+							</div>
+							<div class="withyou-list-footer">
+								<div class="withyou-leftday">
+									<div class="left-d">7일 남음</div>
+									<div class="left-s">모집중</div>
+								</div>
+								<div class="withyou-people">
+									<div class="people">
+										<span>모집인원 5명</span>
+										<span class="r">2명 신청중</span>
+									</div>
+									<div class="percent">
+										<div class="now" style="width:40%"></div>
+										<div class="txt" style="left:40%">40%</div>
+									</div>
+								</div>
+							</div>
+						</a>
+					</li>
+					<li class="type-green"> 
+						<a href="../함께해요/함께해요_상세_작가매칭중.html">
+							<div class="withyou-list-header">
+								<div class="list-photo" style="background-image:url(../image/icon/avatar_micky_40.svg);"></div>
+								<div class="header-info">
+									<div class="name">재나재은맘</div>
+									<div class="time">방금 전</div>
+								</div>
+								<div class="withyou-badge">작가매칭중</div>
+							</div>
+							<div class="withyou-list-box">
+								<div class="withyou-title">
+									홍대에서 커스텀 향수 같이 만드실 분 구해요.
+								</div>
+								<div class="withyou-info">
+									<dl>
+										<dt>희망장소</dt>
+										<dd>홍대입구역 인근</dd>
+									</dl>
+									<dl>
+										<dt>참가비</dt>
+										<dd>50,000 - 60,000원 / 1인</dd>
+									</dl>
+								</div>
+							</div>
+							<div class="withyou-list-footer">
+								<div class="withyou-leftday">
+									<div class="left-d">7일 남음</div>
+									<div class="left-s">모집중</div>
+								</div>
+								<div class="withyou-people">
+									<div class="people">
+										<span>모집인원 5명</span>
+										<span class="r">2명 신청중</span>
+									</div>
+									<div class="percent">
+										<div class="now" style="width:40%"></div>
+										<div class="txt" style="left:40%">40%</div>
+									</div>
+								</div>
+							</div>
+						</a>
+					</li>
+					<li class="type-orange"> 
+						<div class="withyou-list-header">
+							<div class="list-photo" style="background-image:url(../image/icon/avatar_micky_40.svg);"></div>
+							<div class="header-info">
+								<div class="name">재나재은맘</div>
+								<div class="time">방금 전</div>
+							</div>
+							<div class="withyou-badge">신규모집</div>
+						</div>
+						<div class="withyou-list-box">
+							<div class="withyou-title">
+								홍대에서 커스텀 향수 같이 만드실 분 구해요.
+							</div>
+							<div class="withyou-info">
+								<dl>
+									<dt>희망장소</dt>
+									<dd>홍대입구역 인근</dd>
+								</dl>
+								<dl>
+									<dt>참가비</dt>
+									<dd>50,000 - 60,000원 / 1인</dd>
+								</dl>
+							</div>
+						</div>
+						<div class="withyou-list-footer">
+							<div class="withyou-leftday">
+								<div class="left-d">7일 남음</div>
+								<div class="left-s">모집중</div>
+							</div>
+							<div class="withyou-people">
+								<div class="people">
+									<span>모집인원 5명</span>
+									<span class="r">2명 신청중</span>
+								</div>
+								<div class="percent">
+									<div class="now" style="width:40%"></div>
+									<div class="txt" style="left:40%">40%</div>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li class="type-primary"> 
+						<div class="withyou-list-header">
+							<div class="list-photo" style="background-image:url(../image/icon/avatar_micky_40.svg);"></div>
+							<div class="header-info">
+								<div class="name">재나재은맘</div>
+								<div class="time">방금 전</div>
+							</div>
+							<div class="withyou-badge">신규모집</div>
+						</div>
+						<div class="withyou-list-box">
+							<div class="withyou-title">
+								홍대에서 커스텀 향수 같이 만드실 분 구해요.
+							</div>
+							<div class="withyou-info">
+								<dl>
+									<dt>희망장소</dt>
+									<dd>홍대입구역 인근</dd>
+								</dl>
+								<dl>
+									<dt>참가비</dt>
+									<dd>50,000 - 60,000원 / 1인</dd>
+								</dl>
+							</div>
+						</div>
+						<div class="withyou-list-footer">
+							<div class="withyou-leftday">
+								<div class="left-d">7일 남음</div>
+								<div class="left-s">모집중</div>
+							</div>
+							<div class="withyou-people">
+								<div class="people">
+									<span>모집인원 5명</span>
+									<span class="r">2명 신청중</span>
+								</div>
+								<div class="percent">
+									<div class="now" style="width:40%"></div>
+									<div class="txt" style="left:40%">40%</div>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li class="type-complete"> 
+						<div class="withyou-list-header">
+							<div class="list-photo" style="background-image:url(../image/icon/avatar_micky_40.svg);"></div>
+							<div class="header-info">
+								<div class="name">재나재은맘</div>
+								<div class="time">방금 전</div>
+							</div>
+							<div class="withyou-badge">작가 매칭 완료</div>
+						</div>
+						<div class="withyou-list-box">
+							<div class="withyou-title">
+								홍대에서 커스텀 향수 같이 만드실 분 구해요.
+							</div>
+							<div class="withyou-info">
+								<dl>
+									<dt>희망장소</dt>
+									<dd>홍대입구역 인근</dd>
+								</dl>
+								<dl>
+									<dt>참가비</dt>
+									<dd>50,000 - 60,000원 / 1인</dd>
+								</dl>
+							</div>
+						</div>
+						<div class="withyou-list-footer">
+							<div class="withyou-leftday">
+								<div class="left-d">7일 남음</div>
+								<div class="left-s">모집중</div>
+							</div>
+							<div class="withyou-people">
+								<div class="people">
+									<span>모집인원 5명</span>
+									<span class="r">2명 신청중</span>
+								</div>
+								<div class="percent">
+									<div class="now" style="width:40%"></div>
+									<div class="txt" style="left:40%">40%</div>
+								</div>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!-- /.함께해요 결과 -->
+	</div>
+</form>
+<script src="../js/common.js"></script>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>솜씨당 - 상세조건</title>
+	<link rel="stylesheet" href="../css/common.css">
+	<link rel="stylesheet" href="../css/swiper.css">
+	
+	<script src="../js/jquery.min.js"></script>
+	<script src="../js/swiper.min.js"></script>
+</head>
+<body class="bg-w">
+<div class="header condition-header">
+	<div class="header-btn-left header-backblk-btn">
+		<a href="javascript:history.back();">돌아가기</a>
+	</div>	
+	<div class="header-btn-right header-ok-btn">
+		<a href="javascript:;">확인</a>
+	</div>	
+</div>
+<div class="condition-title">상세조건</div>
+<div class="condition-wrap">
+	<h4>정렬순서</h4>
+	<div class="condition-tab1">
+		<ul>
+			<li class="active"><a href="javascript:;">최신순</a></li>
+			<li><a href="javascript:;">인기순</a></li>
+			<li><a href="javascript:;">평점순</a></li>
+			<li><a href="javascript:;">거리순</a></li>
+		</ul>
+	</div>
+	<div class="condition-tab-txt">
+		<ul>
+			<li class="active">등록일자가 최신인 순</li>
+			<li>인기가 많은 순</li>
+			<li>평점이 높은 순</li>
+			<li>거리가 가까운 순</li>
+		</ul>
+	</div>
+</div>
+<div class="condition-wrap">
+	<h4>참가비</h4>
+	<div class="condition-tab2">
+		<ul>
+			<li><a href="javascript:;">5만원대 미만</a></li>
+			<li><a href="javascript:;">5-10만원대</a></li>
+			<li><a href="javascript:;">10만원대 이상</a></li>
+		</ul>
+	</div>
+</div>
+<script>
+	$('.condition-tab1 > ul > li > a').click(function(){
+		$(this).parent().addClass('active').siblings().removeClass();
+		var $len = $(this).parent().index();
+		$(".condition-tab-txt li:eq(" + $len + ")").addClass('active').siblings().removeClass();
+	})
+	$('.condition-tab2 > ul > li > a').click(function(){
+		$(this).parent().addClass('active').siblings().removeClass();
+	})
+</script>
+<script src="../js/common.js"></script>
+</body>
+</html>

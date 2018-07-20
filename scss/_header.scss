@@ -273,6 +273,20 @@
 		background-repeat:no-repeat;
 	}
 }
+.header-category {
+	position:absolute;
+	right:15px;
+	top:14px;
+	a {
+		display:block;
+		padding-left:16px;
+		font-size:12px;
+		line-height:13px;
+		background-image:url(../image/icon/ic_heart_blk.svg);
+		background-size:13px 13px;
+		background-repeat:no-repeat;
+	}
+}
 .header-filter {
 	position:absolute;
 	right:15px;
@@ -295,9 +309,15 @@
 	.header-loc {
 		position:relative;
 		top:auto;
-		right:28px;
 		bottom:auto;
+		margin-right:12px;
 		margin-left:auto;
+	}
+	.header-category {
+		position:relative;
+		top:auto;
+		bottom:auto;
+		margin-right:12px;
 	}
 	.header-filter {
 		position:relative;

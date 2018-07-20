@@ -80,9 +80,19 @@
 	</div>
 	<div class="detail_coupon">
 		<h3>할인쿠폰</h3>
+	</div>
+	<div class="coupon_img_wrap">
 		<div class="coupon_img">
-			<a href="javascript:;"><img src="image/coupon_sample@3x.png" alt=""></a>
+			<div class="swiper-wrapper">
+				<div class="swiper-slide">
+					<a href="javascript:;"><img src="image/coupon_sample@3x.png" alt=""></a>
+				</div>
+				<div class="swiper-slide">
+					<a href="javascript:;"><img src="image/coupon_sample@3x.png" alt=""></a>
+				</div>
+			</div>
 		</div>
+		<div class="coupon-pagination"></div>
 	</div>
 	<div class="detail_schedule">
 		<h3>클래스 일정</h3>
@@ -820,6 +830,14 @@ var detail_calendar1 = new Swiper('.schedule_calendar', {
 var detail_calendar2 = new Swiper('.schedule_info', {
     slidesPerView: 'auto',
     spaceBetween: 0,
+});
+var coupon_imgswiper = new Swiper('.coupon_img', {    
+	slidesPerView: 'auto',
+    spaceBetween: 5,
+	pagination: {
+    	el: '.coupon-pagination',
+    	clickable: true,
+    },
 });
 $('.schedule_info a').click(function() {
 	$(this).parent().addClass('active').siblings().removeClass('active');

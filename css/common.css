@@ -331,9 +331,19 @@ hr.main { height: 20px; background-color: #f0f3f8; border: 0 none; margin: 0; }
 .detail_teacher_info .teacher_txt .teacher_txt02 { margin-top: 6px; font-size: 12px; line-height: 20px; }
 .detail_teacher_info .teacher_txt .teacher_txt03 a { display: inline-block; color: #FF5862; font-size: 12px; line-height: 16px; width: 52px; height: 16px; background-image: url(../image/icon/more_12_red.svg); background-position: right center; background-repeat: no-repeat; background-size: 12px 12px; }
 
-.detail_coupon { background-color: #f0f3f8; padding: 15px; }
-.detail_coupon .coupon_img { margin-top: 10px; }
-.detail_coupon .coupon_img img { width: 100%; }
+.detail_coupon { background-color: #f0f3f8; padding: 15px 15px 5px; }
+.detail_coupon h3 { margin: 0; }
+
+.coupon-pagination { position: relative; text-align: center; z-index: 99; }
+.coupon-pagination .swiper-pagination-bullet { margin: 0 3px; background-color: #FF5862; opacity: 0.3; }
+.coupon-pagination .swiper-pagination-bullet-active { width: 6px; height: 6px; border: 0 none; background-color: #FF5862; opacity: 0.8; opacity: 1; }
+
+.coupon_img_wrap { background-color: #f0f3f8; width: 100%; overflow: hidden; padding: 0 15px 15px; }
+
+.coupon_img { margin-top: 10px; }
+.coupon_img .swiper-slide { width: 100%; }
+.coupon_img a { display: block; width: 100%; }
+.coupon_img img { width: 100%; }
 
 .detail_schedule { padding: 20px 15px; }
 .detail_schedule h3 { margin-bottom: 0; }

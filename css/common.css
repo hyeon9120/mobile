@@ -665,7 +665,7 @@ hr.main { height: 20px; background-color: #f0f3f8; border: 0 none; margin: 0; }
 .worker-title #worker_image { z-index: 2; top: 0; left: 0; right: 0; bottom: 0; width: 100%; overflow: hidden; }
 .worker-title #worker_image:before { z-index: 9; position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0) 20%); background: -o-linear-gradient(bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0) 20%); background: linear-gradient(to top, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0) 20%); content: ""; }
 .worker-title #worker_image .img { width: 100%; height: 50vw; max-height: 100vh; background-size: 100% auto; }
-.worker-title .worker-profile-image { z-index: 20; width: 80px; height: 80px; position: absolute; margin-left: -40px; left: 50%; display: block; bottom: -40px; border-radius: 50%; text-align: center; background-size: cover; background-position: center center; background-color: #FF5862; }
+.worker-title .worker-profile-image { z-index: 20; width: 80px; height: 80px; position: absolute; margin-left: -40px; left: 50%; display: block; bottom: -40px; border-radius: 50%; text-align: center; background-size: cover; background-position: center center; background-color: #D9DFE7; }
 .worker-title .worker-profile-image:before { position: absolute; top: -5px; bottom: -5px; left: -5px; right: -5px; border: 3px solid #fff; content: ""; z-index: 1000; border-radius: 50%; }
 .worker-title .worker-profile-image.profile-primary::before { border-color: #FF5862 !important; }
 .worker-title .worker-profile-image.profile-blue::before { border-color: #6A82EC; }

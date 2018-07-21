@@ -117,4 +117,15 @@
 			}
 		}
 	}
+	&.show {
+		bottom:0;
+	}
+	a.footer-btn {
+		height:60px;
+		line-height:60px;
+		background-color:#9a9895;
+		color:#fff;
+		text-align:center;
+		font-weight:bold;
+	}
 }

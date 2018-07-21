@@ -938,6 +938,8 @@ hr.main { height: 20px; background-color: #f0f3f8; border: 0 none; margin: 0; }
 .mobile-app-install .txt-footer2 .right { float: left; width: 37%; }
 .mobile-app-install .txt-footer2 a { display: block; color: #949FAE; height: 60px; line-height: 60px; text-align: center; }
 .mobile-app-install .txt-footer2 a:active { background-color: #f3f5f8; }
+.mobile-app-install.show { bottom: 0; }
+.mobile-app-install a.footer-btn { height: 60px; line-height: 60px; background-color: #9a9895; color: #fff; text-align: center; font-weight: bold; }
 
 .condition-title { font-size: 26px; padding: 10px 20px 0; font-weight: bold; }
 

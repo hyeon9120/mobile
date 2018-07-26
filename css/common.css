@@ -274,15 +274,25 @@ h4 { font-size: 14px; }
 .star.no-star span { width: 0; }
 .star span { display: inline-block; width: 75px; height: 15px; background-image: url(../image/icon/ic_rating_one_13.svg); background-size: 15px 15px; }
 .star .star-100 { width: 100%; }
+.star .star-95 { width: 92.5%; }
 .star .star-90 { width: 90%; }
+.star .star-85 { width: 87%; }
 .star .star-80 { width: 80%; }
+.star .star-75 { width: 72.5%; }
 .star .star-70 { width: 70%; }
+.star .star-65 { width: 67%; }
 .star .star-60 { width: 60%; }
+.star .star-55 { width: 52.5%; }
 .star .star-50 { width: 50%; }
+.star .star-45 { width: 47%; }
 .star .star-40 { width: 40%; }
+.star .star-35 { width: 32.5%; }
 .star .star-30 { width: 30%; }
+.star .star-25 { width: 27%; }
 .star .star-20 { width: 20%; }
+.star .star-15 { width: 12.5%; }
 .star .star-10 { width: 10%; }
+.star .star-5 { width: 7%; }
 .star .star-0 { width: 0%; }
 
 .nostar-text { font-size: 8px; line-height: 9px; display: inline-block; margin-left: 1px; vertical-align: middle; }
@@ -308,7 +318,7 @@ hr.main { height: 20px; background-color: #f0f3f8; border: 0 none; margin: 0; }
 .detail-title #title_image { z-index: 2; top: 0; left: 0; right: 0; bottom: 0; width: 100%; overflow: hidden; }
 .detail-title #title_image:before { z-index: 9; position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0) 20%); background: -o-linear-gradient(bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0) 20%); background: linear-gradient(to top, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0) 20%); content: ""; }
 .detail-title #title_image .swiper-slide { width: 100%; }
-.detail-title #title_image .img { width: 100%; height: 116vw; max-height: 100vh; background-size: 100% 116vw; }
+.detail-title #title_image .img { width: 100%; height: 116vw; max-height: 100vh; background-size: cover; }
 .detail-title .title-text { position: absolute; bottom: 50px; z-index: 10; left: 15px; right: 15px; color: #fff; }
 .detail-title .title-text .title-type { font-size: 12px; margin-bottom: 4px; }
 .detail-title .title-text .title-subject { word-break: keep-all; font-size: 22px; display: inline-block; white-space: nowrap; overflow: hidden; white-space: normal; line-height: 1.2; text-align: left; word-wrap: break-word; display: -webkit-box; -webkit-box-orient: vertical; }

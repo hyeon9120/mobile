@@ -456,6 +456,18 @@ hr.main { height: 20px; background-color: #f0f3f8; border: 0 none; margin: 0; }
 
 .footer-btn a { background-color: #FF5862; color: #fff; display: block; line-height: 60px; height: 60px; text-align: center; font-weight: bold; }
 
+.mobile-share { position: fixed; top: 50%; left: 50%; width: 336px; height: 216px; margin: -108px 0 0 -168px; background-color: #fff; z-index: 999; opacity: 0; display: none; padding: 15px; }
+.mobile-share h3 { font-size: 22px; margin-bottom: 5px; }
+.mobile-share .h3-subtext { font-size: 13px; color: #949FAE; }
+.mobile-share .share-close { position: absolute; top: 15px; right: 15px; }
+.mobile-share .share-close a { display: block; background-image: url(../image/icon/page_close_blk.svg); background-size: 30px 30px; width: 30px; height: 30px; text-indent: -3000em; overflow: hidden; }
+.mobile-share .share-list { height: 84px; display: flex; padding: 26px 20px 0; }
+.mobile-share .share-list li { flex: 1; }
+.mobile-share .share-list li a { display: block; background-size: 62px 62px; background-repeat: no-repeat; background-position: center top; padding-top: 72px; text-align: center; font-size: 13px; }
+.mobile-share .share-list li.kakao a { background-image: url(../image/icon/share_kakao.svg); }
+.mobile-share .share-list li.facebook a { background-image: url(../image/icon/share_facebook.svg); }
+.mobile-share .share-list li.link a { background-image: url(../image/icon/share_link.svg); }
+
 .list-header { position: relative; height: 46px; padding: 0 15px; }
 .list-header h3 { font-size: 15px; color: #949FAE; line-height: 46px; vertical-align: middle; }
 .list-header .list-header-btn { bottom: 18px; }
@@ -584,8 +596,12 @@ hr.main { height: 20px; background-color: #f0f3f8; border: 0 none; margin: 0; }
 .review_wrap .comment .txt_con { font-size: 11px; }
 .review_wrap .list-gallery { margin-top: 5px; }
 
-.btn_write_review { display: block; margin: 10px 40px; border: 1px solid #FF5862; color: #FF5862; height: 50px; line-height: 50px; vertical-align: middle; text-align: center; font-weight: bold; font-size: 14px; margin-bottom: -3px; }
-.btn_write_review span { display: inline-block; margin-right: 4px; background-image: url(../image/review_write.svg); background-size: 18px 17px; width: 18px; height: 17px; }
+.review_nowrap { padding: 0 20px 40px; position: relative; }
+.review_nowrap .empty-img { margin-top: 60px !important; }
+
+.btn_write_review { display: block; margin: 10px 40px 10px; border: 1px solid #FF5862; color: #FF5862; height: 50px; line-height: 50px; vertical-align: middle; text-align: center; font-weight: bold; font-size: 14px; }
+.btn_write_review span.icon_write { display: inline-block; margin-right: 4px; background-image: url(../image/review_write.svg); background-size: 17px 16px; width: 17px; height: 16px; vertical-align: middle; }
+.btn_write_review span.icon_comment { display: inline-block; margin-right: 4px; background-image: url(../image/icon/ic_comment_red.svg); background-size: 17px 17px; width: 17px; height: 17px; vertical-align: middle; }
 
 .list-gallery { position: relative; }
 .list-gallery ul { width: 100%; }

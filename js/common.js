@@ -63,6 +63,16 @@ $(window).scroll(function(){
 	//if ($(".detail-header").length >0) detail_header();
 })
 
+// 모바일공유 팝업
+function share_show() {
+	$('.bg-overlay').stop().show().animate({opacity: 1}, 300);
+	$('.mobile-share').stop().show().animate({opacity: 1}, 300);
+}
+function share_hide() {
+	$('.bg-overlay').stop().animate({opacity: 0}, 300).hide();
+	$('.mobile-share').stop().show().animate({opacity: 0}, 300).hide();;
+}
+
 // 앱 다운로드 팝업
 function appinstall_show(txt) {
 	$('.bg-overlay').stop().show().animate({opacity: 1}, 300);
@@ -76,6 +86,7 @@ function appinstall_hide() {
 $('.bg-overlay').each(function() {
 	$('.bg-overlay').click(function(){
 		appinstall_hide();
+		share_hide();
 	});
 });
 

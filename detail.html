@@ -23,7 +23,7 @@
 		<a href="javascript:;">북마크추가됨</a>
 	</div>-->
 	<div class="header-btn-right header-share-white-btn">
-		<a href="javascript:;">공유</a>
+		<a href="javascript:share_show();">공유</a>
 	</div>
 </div>
 <div class="container">
@@ -228,6 +228,7 @@
 			<li><a href="javascript:;" rel="class_review">후기 13</a></li>
 			<li><a href="javascript:;" rel="class_qna">Q&amp;A</a></li>
 			<li><a href="javascript:;" rel="class_cancel">변경 및 취소</a></li>
+			<li><a href="javascript:;" rel="class_nocomment">댓글없음</a></li>
 		</ul>
 	</div>
 	<div class="tab_wrap">
@@ -426,7 +427,7 @@
 		<!-- Tab02 -->
 		<div id="class_review" class="tab_content" style="display:none">
 			<!-- 리뷰 -->
-			<a href="javascript:;" class="btn_write_review">후기 작성하기</a>
+			<a href="javascript:;" class="btn_write_review"><span class="icon_write"></span> 후기 작성하기</a>
 			<div class="review_wrap">
 				<div class="photo">
 					<div class="img" style="background-image:url(image/icon/avatar_dorothy_40.svg)"></div>
@@ -591,7 +592,7 @@
 		<!-- Tab03 -->
 		<div id="class_qna" class="tab_content" style="display:none">
 			<!-- 리뷰 -->
-			<a href="javascript:;" class="btn_write_review"><span class="icon_write"></span>문의 작성하기</a>
+			<a href="javascript:;" class="btn_write_review"><span class="icon_write"></span> 문의 작성하기</a>
 			<div class="review_wrap">
 				<div class="photo">
 					<div class="img" style="background-image:url(image/icon/avatar_victor_40.svg)"></div>
@@ -773,8 +774,19 @@
 			
 		</div>
 		<!-- /.Tab04 -->
+		
+		<!-- Tab05 -->
+		<div id="class_nocomment" class="tab_content" style="display:none">
+			<a href="javascript:;" class="btn_write_review"><span class="icon_write"></span> 후기 작성하기</a>
+			<div class="review_nowrap">
+				<div class="search-empty">
+					<div class="empty-img"></div>
+					<div class="empty-txt">등록된 후기가 없네요.</div>
+				</div>
+			</div>
+		</div>
+		<!-- /.Tab02 -->
 	</div>
-	
 </div>
 <div class="price-bar">
 	<div class="detail_txt">
@@ -809,6 +821,22 @@
 			<a href="javascript:;" class="text-primary bold">설치하기</a>
 		</div>
 	</div>
+</div>
+<div class="mobile-share">
+	<h3 class="text">공유하기</h3>
+	<div class="h3-subtext">친구들에게 클래스를 공유해보세요.</div>
+	<div class="share-close"><a href="javascript:share_hide();">닫기</a></div>
+	<ul class="share-list">
+		<li class="kakao">
+			<a href="javascript:;">카카오톡</a>
+		</li>
+		<li class="facebook">
+			<a href="javascript:;">페이스북</a>
+		</li>
+		<li class="link">
+			<a href="javascript:;">링크복사</a>
+		</li>
+	</ul>
 </div>
 <script>
 //대표이미지 Swiper

@@ -523,3 +523,64 @@
 		font-weight:bold;
 	}
 }
+.mobile-share {
+	position:fixed;
+	top:50%;
+	left:50%;	
+	width:336px;
+	height:216px;
+	margin:-108px 0 0 -168px;
+	background-color:#fff;
+	z-index:999;
+	opacity:0;
+	display:none;
+	padding:15px;
+	h3 {
+		font-size:22px;
+		margin-bottom:5px;
+	}
+	.h3-subtext {
+		font-size:13px;		
+		color:$gray2-color;
+	}
+	.share-close {
+		position:absolute;
+		top:15px;
+		right:15px;
+		a {
+			display:block;
+			background-image:url(../image/icon/page_close_blk.svg);
+			background-size:30px 30px;
+			width:30px;
+			height:30px;
+			text-indent:-3000em;
+			overflow: hidden;
+		}
+	}
+	.share-list {
+		height:84px;
+		display:flex;
+		padding:26px 20px 0;
+		li {
+			flex:1;
+			a {
+				display:block;
+				background-size:62px 62px;
+				background-repeat:no-repeat;
+				background-position:center top;
+				padding-top:72px;
+				text-align:center;
+				font-size:13px;
+			}
+			&.kakao a {
+				background-image:url(../image/icon/share_kakao.svg)
+			}
+			&.facebook a {
+				background-image:url(../image/icon/share_facebook.svg)
+			}
+			&.link a {
+				background-image:url(../image/icon/share_link.svg)
+			}
+		}
+	}
+}

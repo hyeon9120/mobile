@@ -267,12 +267,13 @@
   transform: scale(0.33);
 }
 .swiper-pagination-bullet {
-  width: 6px;
-  height: 6px;
+  width:5px;
+  height: 5px;
   display: inline-block;
   border-radius: 100%;
-  background: #000;
+  background: #d1d1d1;
   vertical-align: middle;
+  transition:.3s;
 }
 button.swiper-pagination-bullet {
   border: none;
@@ -288,10 +289,10 @@ button.swiper-pagination-bullet {
   cursor: pointer;
 }
 .swiper-pagination-bullet-active {
-  background:#fff;
-  border:4px solid #000;
-	width:14px;
-	height:14px;
+  background:#FF5862;
+	width:15px;
+	height:5px;
+	border-radius:30px;
 }
 .swiper-container-vertical > .swiper-pagination-bullets {
   right: 10px;

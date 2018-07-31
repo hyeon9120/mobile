@@ -14,9 +14,9 @@
 	input {
 		border:1px solid #d4d9e0;
 		height:44px;
-		line-height:44px;
+		line-height:14px;
 		border-radius:5px;
-		padding:0 10px 0 32px;
+		padding:10px 10px 10px 32px;
 		width:100%;
 		font-size:12px;
 		font-weight:bold;
@@ -340,9 +340,9 @@
 			left:0;
 			right:0;
 			bottom:0;
-			background: -webkit-linear-gradient(bottom, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0) 20%);
-			background: -o-linear-gradient(bottom, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0) 20%);
-			background: linear-gradient(to top, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0) 20%); 
+			background: -webkit-linear-gradient(bottom, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0) 50%);
+			background: -o-linear-gradient(bottom, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0) 50%);
+			background: linear-gradient(to top, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0) 50%); 
 			content:"";
 		}
 		.img {

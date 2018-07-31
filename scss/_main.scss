@@ -16,7 +16,25 @@
 .main-header {
 	position:relative;
 	padding-left:15px;
-	padding-bottom:20px;
+	padding-bottom:15px;
+	.h2-uptext {
+		font-size:20px;
+		line-height:33px;
+		margin-bottom:20px;
+		.underline {
+			position:relative;
+			display:inline-block;
+			&:before {
+				position:absolute;
+				bottom:-1px;
+				left:0;
+				right:0;
+				height:2px;
+				background:#000;
+				content:"";
+			}
+		}
+	}
 	.h2-subtext {
 		font-size:20px;
 		line-height:33px;
@@ -198,7 +216,7 @@
 			content:"";
 			display:inline-block;
 			margin-left:4px;
-			background-image:url(../image/icon/list_view.svg);
+			background-image:url(../image/icon/list_more_view.svg);
 			background-size:11px 10px;
 			width:11px;
 			height:10px;
@@ -220,14 +238,15 @@
 		vertical-align: middle;
 		margin:0 auto;
 		display:block;
-		&:after {
+		&:before {
 			content:"";
 			display:inline-block;
+			margin-right:4px;
 			margin-left:4px;
-			background-image:url(../image/icon/list_more_view.svg);
-			background-size:11px 10px;
+			background-image:url(../image/icon/icon_plus.svg);
+			background-size:11px 11px;
 			width:11px;
-			height:10px;
+			height:11px;
 			margin-bottom:-1px;
 		}
 	}

@@ -6,15 +6,17 @@
 .tab {
 	position:relative;
 	height:54px;
-	box-shadow:0 5px 6px 0 rgba(169,178,192,0.1);
-	background-color:#fff;
-	z-index:100;
+	
 	ul {
+		position:relative;		
 		display:flex;
 		width:100%;
 		padding-left:10px;		
-		
+		box-shadow:0 5px 6px 0 rgba(169,178,192,0.1);
 		background-color:#fff;
+		z-index:100;
+		transition:.3s;
+		height:54px;
 	}	
 	li {
 		position:relative;
@@ -51,15 +53,26 @@
 				content:"";
 			}
 		}
-		
+		&.has-badge:after {
+			position:absolute;
+			top:15px;
+			right:2px;
+			background:$primary-color;
+			border-radius:50%;
+			width:4px;
+			height:4px;
+			content:"";
+		}
 	}
 }
 .tab-fixed {
-	position:fixed;
-	top:0;
-	left:0;
-	right:0;
-	z-index:100;
+	ul {
+		position:fixed;
+		top:0;
+		left:0;
+		right:0;
+		z-index:100;
+	}
 }
 .tab_content {
 	padding:15px 0 24px;

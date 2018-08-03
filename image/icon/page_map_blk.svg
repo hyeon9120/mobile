@@ -1,18 +1,18 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg width="30px" height="30px" viewBox="0 0 30 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
-    <title>icon/page_map_blk</title>
-    <desc>Created with Sketch.</desc>
-    <defs>
-        <path d="M18.0038116,22.5032265 L12.6889574,19.8457995 L8.05976508,22.4910522 C7.58754987,22.7608895 7,22.4199211 7,21.8760467 L7,10.5427133 C7,10.2885231 7.13620263,10.0538215 7.35690159,9.92770778 L12.3044343,7.10054624 C12.4104226,7.03735139 12.5343049,7.00104667 12.6666667,7.00104667 C12.7856364,7.00104667 12.8977558,7.0303766 12.9961884,7.08220013 L18.3110426,9.73962721 L22.9402349,7.09437444 C23.4124501,6.82453718 24,7.16550561 24,7.70938 L24,19.0427133 C24,19.2969036 23.8637974,19.5316052 23.6430984,19.6577189 L18.6955657,22.4848804 C18.5895774,22.5480753 18.4656951,22.58438 18.3333333,22.58438 C18.2143636,22.58438 18.1022442,22.5550501 18.0038116,22.5032265 Z M17.625,10.9804874 L13.375,8.85548741 L13.375,18.6049393 L17.625,20.7299393 L17.625,10.9804874 Z M19.0416667,10.9537751 L19.0416667,20.6554611 L22.5833333,18.6316515 L22.5833333,8.92996561 L19.0416667,10.9537751 Z M11.9583333,8.92996561 L8.41666667,10.9537751 L8.41666667,20.6554611 L11.9583333,18.6316515 L11.9583333,8.92996561 Z" id="path-1"></path>
-    </defs>
-    <g id="icon/page_map_blk" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="icon">
-            <mask id="mask-2" fill="white">
-                <use xlink:href="#path-1"></use>
-            </mask>
-            <use id="Combined-Shape" fill="#B2BCC8" fill-rule="nonzero" xlink:href="#path-1"></use>
-            <rect id="color" fill="#212121" mask="url(#mask-2)" x="0" y="0" width="30" height="30"></rect>
-        </g>
-    </g>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 22.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 30 30" style="enable-background:new 0 0 30 30;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#212121;}
+</style>
+<title>icon/page_map_blk</title>
+<desc>Created with Sketch.</desc>
+<g id="icon">
+	<g id="Combined-Shape">
+		<path id="path-1_1_" class="st0" d="M18,22.5l-5.3-2.7l-4.6,2.6C7.6,22.8,7,22.4,7,21.9V10.5c0-0.3,0.1-0.5,0.4-0.6l4.9-2.8
+			C12.4,7,12.5,7,12.7,7c0.1,0,0.2,0,0.3,0.1l5.3,2.7l4.6-2.6C23.4,6.8,24,7.2,24,7.7V19c0,0.3-0.1,0.5-0.4,0.6l-4.9,2.8
+			c-0.1,0.1-0.2,0.1-0.4,0.1C18.2,22.6,18.1,22.6,18,22.5z M17.6,11l-4.3-2.1v9.7l4.3,2.1V11z M19,11v9.7l3.5-2V8.9L19,11z M12,8.9
+			l-3.5,2v9.7l3.5-2V8.9z"/>
+	</g>
+</g>
 </svg>

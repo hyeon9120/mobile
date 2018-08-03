@@ -39,27 +39,39 @@
 	.launge a {
 		background-image:url(../image/icon/main_menu_launge_off.svg);
 	}
+	.withyou a {
+		background-image:url(../image/icon/main_menu_withyou.svg);
+	}
 	.noti a {
 		background-image:url(../image/icon/main_menu_noti_off.svg);
 	}
 	.mypage a {
-		background-image:url(../image/icon/main_menu_mypage_off.svg);
+		background-image:url(../image/icon/main_menu_mypage.svg);
 	}
 	.home.active a,
 	.home a:active {
 		background-image:url(../image/icon/main_menu_home_on.svg);
+		opacity:1;
 	}
 	.launge.active a,
 	.launge a:active{
 		background-image:url(../image/icon/main_menu_launge_on.svg);
+		opacity:1;
+	}
+	.withyou.active a,
+	.withyou a:active{
+		background-image:url(../image/icon/main_menu_withyou_on.svg);
+		opacity:1;
 	}
 	.noti.active a,
 	.noti a:active {
 		background-image:url(../image/icon/main_menu_noti_on.svg);
+		opacity:1;
 	}
 	.mypage.active a,
 	.mypage a:active {
 		background-image:url(../image/icon/main_menu_mypage_on.svg);
+		opacity:1;
 	}
 }
 .price-bar {

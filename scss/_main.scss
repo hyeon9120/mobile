@@ -76,16 +76,7 @@
 				left:0;
 				right:0;
 				bottom:0;
-				
-					transition: transform 0.5s ease-in-out;
-				img {
-					-webkit-backface-visibility: hidden;
-			   backface-visibility: hidden;
-			   -webkit-transform: translateZ(0) scale(1.0);
-			   transform: translateZ(0) scale(1.0);
-			   -webkit-filter: blur(0);
-			   filter: blur(0);
-				}
+				transition: transform 0.5s ease-in-out;
 			}
 			.text {
 				z-index:999;

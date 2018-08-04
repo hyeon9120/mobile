@@ -276,7 +276,6 @@ h4 { font-size: 14px; }
 .list-interest .swiper-slide { margin-left: 10px; }
 .list-interest .swiper-slide a { position: relative; display: block; width: 120px; height: 80px; border-radius: 4px; overflow: hidden; background-position: center center; background-size: 100%; }
 .list-interest .swiper-slide a .img { position: absolute; top: 0; left: 0; right: 0; bottom: 0; transition: transform 0.5s ease-in-out; }
-.list-interest .swiper-slide a .img img { -webkit-backface-visibility: hidden; backface-visibility: hidden; -webkit-transform: translateZ(0) scale(1); transform: translateZ(0) scale(1); -webkit-filter: blur(0); filter: blur(0); }
 .list-interest .swiper-slide a .text { z-index: 999; position: absolute; bottom: 12px; left: 10px; color: #fff; font-size: 14px; text-shadow: 0 1px 0 rgba(0, 0, 0, 0.3); }
 .list-interest .swiper-slide a:hover .img, .list-interest .swiper-slide a:focus .img { -webkit-transform: translateZ(0) scale(1.1); transform: translateZ(0) scale(1.1); }
 

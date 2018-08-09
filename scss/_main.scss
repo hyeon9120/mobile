@@ -3,10 +3,19 @@
 	.banner-list {
 		margin-right:15px;
 		width:330px;
-		height:250px;
-		box-shadow:0 5px 20px 0 rgba(0,0,0,0.1);
-		@extend %bg-grey;
+		height:270px;
 		border-radius:0;
+		overflow:hidden;
+		a {
+			@extend %bg-grey;
+			display:block;
+			width:330px;
+			height:250px;
+			box-shadow:0 5px 20px 0 rgba(0,0,0,0.1);
+		}
+	}
+	.swiper-pagination {
+		padding-top:0 !important;
 	}
 }
 .main-wrap {

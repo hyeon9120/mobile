@@ -18,9 +18,9 @@
 			left:0;
 			right:0;
 			bottom:0;
-			background: -webkit-linear-gradient(bottom, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0) 50%);
-			background: -o-linear-gradient(bottom, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0) 50%);
-			background: linear-gradient(to top, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0) 50%); 
+			background: -webkit-linear-gradient(bottom, rgba(0,0,0,0.38) 0%, rgba(0,0,0,0) 45%);
+			background: -o-linear-gradient(bottom, rgba(0,0,0,0.38) 0%, rgba(0,0,0,0) 45%);
+			background: linear-gradient(to top, rgba(0,0,0,0.38) 0%, rgba(0,0,0,0) 45%); 
 			content:"";
 		}
 		.swiper-slide {
@@ -31,7 +31,7 @@
 			height:410px;
 			max-height:100vh;
 			background-size:cover;
-			background-position:center;
+			background-position:center center;
 		}
 	}
 	

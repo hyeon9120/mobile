@@ -236,6 +236,26 @@
 	<!-- /.Tab02 -->
 
 </div>
+<div class="withyou-bar">
+	<div class="withyou_btn">
+		<a href="javascript:appinstall_show('클래스 신청은 모바일 앱에서 가능합니다.');">신청하기</a>
+	</div>
+</div>
 <script src="../js/common.js"></script>
+<script>
+$('.withyou-bar').each(function() {
+	$(function( $ ) {
+		$(function() {
+			$( window ).scroll(function() {
+				$('.withyou-bar').addClass('hide');
+				clearTimeout( $.data( this, "scrollCheck" ) );
+				$.data( this, "scrollCheck", setTimeout(function() {
+					$('.withyou-bar').removeClass('hide');
+				}, 400) );
+			});
+		});
+	});
+});
+</script>
 </body>
 </html>

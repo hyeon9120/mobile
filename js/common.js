@@ -12,19 +12,7 @@ $('.menu-bar').each(function() {
 		});
 	});
 })
-// Tab간 컨텐츠 이동
-var tab_scl,scl;
-function tab_position() {
-	scl = $(window).scrollTop();
-	//if ($(".detail-header").length >0) scl += 61; 
-	if(scl > tab_scl ) {
-		$('.tab').addClass('tab-fixed');
-		//if ($(".detail-header").length >0) $('.tab').css('top','60px');
-	} else {
-		$('.tab').removeClass('tab-fixed');
-		//if ($(".detail-header").length >0) $('.tab').css('top','0');
-	}
-}
+
 // 상세화면 상단탭바 스크롤에따라 색상변경
 function detail_header() {
 	scl = $(window).scrollTop();
@@ -45,6 +33,16 @@ function detail_header() {
 		$btnWHITE.css('opacity','1');
 	}
 }
+// Tab간 컨텐츠 이동
+var tab_scl,scl;
+function tab_position() {
+	scl = $(window).scrollTop();
+	if(scl > tab_scl ) {
+		$('.tab').addClass('tab-fixed');
+	} else {
+		$('.tab').removeClass('tab-fixed');
+	}
+}
 $('.tab').each(function() {
 	tab_scl = $('.tab').offset().top;
 	$(".tab ul li a").click(function () {
@@ -55,6 +53,9 @@ $('.tab').each(function() {
 		$('#'+activeTab).fadeIn()
 	});
 });
+ $(window).resize(function () {
+    tab_scl = $('.tab').offset().top;
+ });
 // 스크롤시에 Tab버튼 상단으로이동	
 tab_position();
 //detail_header();

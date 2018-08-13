@@ -297,12 +297,13 @@
 	li {
 		position:relative;
 		margin:8px 0;
+		height:84px;
 		@extend %clearfix;
 	}
 	.list-photo {
 		position:relative;
 		overflow:hidden;
-		width:34%;
+		width:128px;
 		float:left;
 		border-radius:4px;
 		.img {
@@ -314,31 +315,32 @@
 			background-size:cover;
 			background-position:center center;
 			display:block;
+			background-repeat:no-repeat;
 		}
 		&:after {
 			content: "";
 			display: block;
 			background-color:#ebebeb;
-			padding-top: 60%;
+			padding-top:80px;
 		}
 	}
 	.text {
-		float:left;
-		width:66%;
-		padding:0 0 10px 15px;
+		padding:0 0 10px 144px;
 	}
 	.list-subject {
 		word-break: keep-all;
 		font-size:14px;
 		color:#212121;
 		display: inline-block; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; 
-		white-space: normal; line-height: 1.2; height: 2.4em; text-align: left; word-wrap: break-word; 
+		white-space: normal; line-height: 1.2; text-align: left; word-wrap: break-word; 
 		display: -webkit-box;
 		-webkit-line-clamp: 2;
 		-webkit-box-orient: vertical;
 	}
 	.list-price {
 		margin-top:4px;
+		word-break: keep-all;
+		white-space: nowrap;
 		.price01 {
 			font-size:12px;
 			display:inline-block;
@@ -358,6 +360,11 @@
 				content:"/ ";
 			}
 		}
+	}
+	.list-footer {
+		position:absolute;
+		bottom:4px;
+		left:144px;
 	}
 }
 .list-craft {

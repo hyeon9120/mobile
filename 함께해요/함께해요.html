@@ -18,21 +18,23 @@
 		<a href="">검색</a>
 	</div>	
 </div>
-<div class="withyou-header-tab">
-	<div class="withyou-search bg-w">
-		<input type="text" value="서울시 전체" onclick="location.href='../지역검색/지역검색.html'">
-	</div>
-	<div class="tab" id="withyou_tab">
-		<ul class="tab-wrapper">
-			<li class='active swiper-slide'><a href="javascript:;" rel="class_info">전체</a></li>
-			<li class="swiper-slide"><a href="javascript:;" rel="class_review">인기</a></li>
-			<li class="swiper-slide"><a href="javascript:;" rel="class_qna">신규</a></li>
-			<li class="swiper-slide"><a href="javascript:;" rel="class_cancel">작가 매칭중</a></li>
-			<li class="swiper-slide"><a href="javascript:;" rel="class_qna">작가 매칭완료</a></li>
-			<li class="swiper-slide"><a href="javascript:;" rel="class_qna">작가 1</a></li>
-			<li class="swiper-slide"><a href="javascript:;" rel="class_qna">작가 2</a></li>
-			<li class="swiper-slide"><a href="javascript:;" rel="class_qna">작가 3</a></li>
-		</ul>
+<div id="withyou-scroll-tab">
+	<div class="withyou-header-tab">
+		<div class="withyou-search bg-w">
+			<input type="text" value="서울시 전체" onclick="location.href='../지역검색/지역검색.html'">
+		</div>
+		<div class="tab" id="withyou_tab">
+			<ul class="tab-wrapper">
+				<li class='active swiper-slide'><a href="javascript:;" rel="class_info">전체</a></li>
+				<li class="swiper-slide"><a href="javascript:;" rel="class_review">인기</a></li>
+				<li class="swiper-slide"><a href="javascript:;" rel="class_qna">신규</a></li>
+				<li class="swiper-slide"><a href="javascript:;" rel="class_cancel">작가 매칭중</a></li>
+				<li class="swiper-slide"><a href="javascript:;" rel="class_qna">작가 매칭완료</a></li>
+				<li class="swiper-slide"><a href="javascript:;" rel="class_qna">작가 1</a></li>
+				<li class="swiper-slide"><a href="javascript:;" rel="class_qna">작가 2</a></li>
+				<li class="swiper-slide"><a href="javascript:;" rel="class_qna">작가 3</a></li>
+			</ul>
+		</div>
 	</div>
 </div>
 <div class="withyou-list">
@@ -134,12 +136,12 @@
 			</a>
 		</li>
 		<li class="type-complete">
+			<a href="../작가/작가.html" class="complete-worker">매칭 작가 프로필</a>
 			<a href="함께해요_상세_작가매칭완료.html">
 				<div class="withyou-list-header">
 					<div class="list-photo" style="background-image:url(../image/icon/avatar_micky_40.svg);"></div>
 					<div class="header-info">
 						<div class="name">재나재은맘</div>
-						<div class="time">방금 전</div>
 					</div>
 					<div class="withyou-badge">작가 매칭 완료</div>
 				</div>
@@ -152,31 +154,25 @@
 					<div class="withyou-title">
 						홍대에서 커스텀 향수 같이 만드실 분 구해요.
 					</div>
+				</div>
+				<div class="withyou-list-footer">
 					<div class="withyou-info">
 						<dl>
-							<dt>희망장소</dt>
-							<dd>홍대입구역 인근</dd>
+							<dt>일정</dt>
+							<dd>2018년 7월 14일 토요일 오후 2시 - 5시</dd>
+						</dl>
+						<dl>
+							<dt>장소</dt>
+							<dd>망원동 그린나무 공방</dd>
 						</dl>
 						<dl>
 							<dt>참가비</dt>
-							<dd>50,000 - 60,000원 / 1인</dd>
+							<dd>50,000 - 60,000원 / 1인 <small>(재료비 포함)</small></dd>
 						</dl>
-					</div>
-				</div>
-				<div class="withyou-list-footer">
-					<div class="withyou-leftday">
-						<div class="left-d">7일 남음</div>
-						<div class="left-s">모집중</div>
-					</div>
-					<div class="withyou-people">
-						<div class="people">
-							<span>모집인원 5명</span>
-							<span class="r">2명 신청중</span>
-						</div>
-						<div class="percent">
-							<div class="now" style="width:40%"></div>
-							<div class="txt" style="left:40%">40%</div>
-						</div>
+						<dl>
+							<dt>참여인원</dt>
+							<dd>5명</dd>
+						</dl>
 					</div>
 				</div>
 			</a>
@@ -315,10 +311,10 @@ var tabswiper = new Swiper('#withyou_tab', {
 	
 // 함게해요 tab 컨텐츠 이동
 var with_tab = $('.withyou-header-tab');
-var tab_scl = with_tab.offset().top-10;
+var with_tab_scl = with_tab.offset().top - 10;
 function withyou_tab_position() {
 	var scl = $(window).scrollTop();
-	if(scl > tab_scl ) {
+	if(scl > with_tab_scl ) {
 		with_tab.addClass('fixed');
 	} else {
 		with_tab.removeClass('fixed');

@@ -35,6 +35,11 @@
 	top:15px;
 	left:15px;
 }
+.header-btn-left3 {
+	position:absolute;
+	top:5px;
+	left:5px;
+}
 .detail-header {
 	position:absolute;
 	top:0;
@@ -227,6 +232,11 @@
 .header-close-gray-btn a {	
 	@extend %ir-pm;
 	@include btn_img(30px,30px,'../image/icon/page_close_gray.svg');
+	background-position:center center;
+}
+.header-close-blk-btn a {	
+	@extend %ir-pm;
+	@include btn_img(30px,30px,'../image/icon/page_close_blk.svg');
 	background-position:center center;
 }
 .header-share-btn a {

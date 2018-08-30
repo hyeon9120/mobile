@@ -182,6 +182,9 @@ var {
 .bold {
 	font-weight:bold;
 }
+.bg-white {
+	background-color:#fff;
+}
 .bg-overlay {
 	display:none;
 	background-color:rgba(0,0,0,0.5);
@@ -194,10 +197,22 @@ var {
 	opacity:0;
 }
 .container {
-	padding-bottom:50px;
+	padding-bottom:60px;
 	background-color:#fff;
 }
-
+.footer {
+	margin-top:-30px;
+	padding:26px 0 70px;
+	background-color:#F1F5FB;
+	.footer-text {
+		text-align:center;
+		font-size:10px;
+		color:#9FAAB7;
+	}
+	.copyright {
+		padding-top:10px;
+	}
+}
 .text-underline {
 	text-decoration: underline;
 }
@@ -259,3 +274,5 @@ h4 {
 @import "subwaycolor";
 @import "mobileapp";
 @import "condition";
+@import "notice";
+@import "iphone5";

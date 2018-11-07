@@ -14,12 +14,14 @@
 	}
 	.txt01 {
 		font-weight:bold;
-		padding:3px;
+		padding:0 75px 0 3px;
 		font-size:16px;
+        word-break: keep-all;
 	}
 	.txt02 {
-		padding:3px;
-		font-size:16px;
+		padding:0 75px 0 3px;
+		font-size:14px;
+        word-break: keep-all;
 	}
 	.download-box {
 		position:relative;
@@ -96,6 +98,34 @@
 		font-size:12px;
 		text-align:center;
 	}
+    .red-box {
+        position:relative;
+        margin: 14px 0 10px;
+        background-color: #ff5050;
+        background-image: url(../image/icon/bg_txt_badge.svg);
+        background-repeat: no-repeat;
+        background-size: 15px 15px;
+        background-position: left top;
+        padding: 14px 10px;
+        color: #fff;
+        font-size: 13px;
+        text-align:center;
+        span {
+            font-size:15px;
+        }
+        .emoji {
+            width:75px;
+            height:75px;
+            background-image: url(../image/popup_emoji.svg);
+            background-repeat: no-repeat;
+            background-size: 75px 75px;
+            position:absolute;
+            
+            top:-62px;
+            right:15px;
+        }
+    }
+    
 	.txt-footer2 {
 		border-top:1px solid #d9dfe7;
 		.left {
